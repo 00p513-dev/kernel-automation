@@ -18,7 +18,7 @@ on:
 env:
   KERNEL_SOURCE: https://github.com/mahajant99/kernel_xiaomi_msm8953-ysl
   BRANCH: q-caf
-  DEFCONFIG: priyo-rosy_defconfig
+  DEFCONFIG: priyo-ysl_defconfig
   TZ: Asia/Kolkata
   MIR: bit
   TOOLCHAIN: https://github.com/mscalindt/aarch64-linux-android-4.9.git
