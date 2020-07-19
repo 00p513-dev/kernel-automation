@@ -16,9 +16,9 @@ on:
     
 
 env:
-  KERNEL_SOURCE: https://github.com/shivamjadon/Drona_Kernel_Rosy.git
+  KERNEL_SOURCE: https://github.com/mahajant99/kernel_xiaomi_msm8953-ysl
   BRANCH: q-caf
-  DEFCONFIG: drona-rosy_defconfig
+  DEFCONFIG: priyo-rosy_defconfig
   TZ: Asia/Kolkata
   MIR: bit
   TOOLCHAIN: https://github.com/mscalindt/aarch64-linux-android-4.9.git
