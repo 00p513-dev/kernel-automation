@@ -16,10 +16,10 @@ on:
     
 
 env:
-  KERNEL_SOURCE: https://github.com/mahajant99/kernel_xiaomi_msm8953-ysl
-  BRANCH: q-caf
-  DEFCONFIG: priyo-ysl_defconfig
-  TZ: Asia/Kolkata
+  KERNEL_SOURCE: https://github.com/LineageOS/android_kernel_motorola_sdm632
+  BRANCH: lineage-18.1
+  DEFCONFIG: channel_defconfig
+  TZ: Europe/London
   MIR: bit
   TOOLCHAIN: https://github.com/mscalindt/aarch64-linux-android-4.9.git
   ARCH: arm64
