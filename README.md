@@ -1,7 +1,6 @@
 # Kernel Automation #
 
 
-
 What is this ?
 
 This is a Automatic kernel builder, which is totally online. No need for PCs anymore.
