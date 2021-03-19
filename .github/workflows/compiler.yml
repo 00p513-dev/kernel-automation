@@ -22,6 +22,7 @@ env:
   TZ: Europe/London
   MIR: bit
   TOOLCHAIN: https://github.com/mscalindt/aarch64-linux-android-4.9.git
+  ARM32_TOOLCHAIN: https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9
   ARCH: arm64
   SUBARCH: arm64
 jobs:
@@ -51,8 +52,11 @@ jobs:
          run: |
             cd work
             git clone $TOOLCHAIN --depth=1
+            git clone $ARM32_TOOLCHAIN --depth=1
             CROSS_COMPILE+="aarch64-linux-android-4.9/bin/aarch64-linux-android-"
+            CROSS_COMPILE_ARM32+="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9/bin/arm-linux-androideabi-"
             export CROSS_COMPILE
+            export CROSS_COMPILE_ARM32
             export ARCH=$ARCH
             export SUBARCH=$SUBARCH
             make clean
